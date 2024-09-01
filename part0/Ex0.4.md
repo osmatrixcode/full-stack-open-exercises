@@ -5,7 +5,7 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    server-->>browser: 302 Found Status Code
+    server-->>browser: 302 "Found", Status Code
     deactivate server
 
     Note right of browser: This Status Code will make sure that the webpage refreshes (reloads), so will GET the html file
